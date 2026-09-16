@@ -3,14 +3,17 @@ plugins {
 }
 
 android {
+
+    buildFeatures {
+        viewBinding = true
+    }
+
     namespace = "com.example.spinner_caysa"
     compileSdk {
         version = release(37)
     }
 
-    buildFeatures {
-        viewBinding = true
-    }
+
 
     defaultConfig {
         applicationId = "com.example.spinner_caysa"
