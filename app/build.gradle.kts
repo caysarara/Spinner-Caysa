@@ -8,9 +8,13 @@ android {
         version = release(37)
     }
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.spinner_caysa"
-        minSdk = 24
+        minSdk = 25
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
@@ -34,6 +38,7 @@ android {
 dependencies {
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.compose.material.core)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
